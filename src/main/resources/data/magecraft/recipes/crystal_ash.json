@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "magecraft:blue_quartz"
+  },
+  "result": "magecraft:crystal_ash",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "magecraft:blocks/elder_door_bottom",
+    "top": "magecraft:blocks/elder_door_top"
+  }
+}

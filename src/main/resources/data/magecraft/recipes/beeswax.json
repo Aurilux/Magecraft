@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:honeycomb"
+  },
+  "result": "magecraft:beeswax",
+  "experience": 0.35,
+  "cookingtime": 200
+}
