@@ -10,9 +10,9 @@ import net.minecraftforge.registries.ObjectHolder;
 
 @ObjectHolder("magecraft")
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public class ModBlock {
+public class ModBlock {
 
-//name blocks here
+    //name blocks here
 
     //simple blocks
     @ObjectHolder("elder_planks")
@@ -56,37 +56,38 @@ import net.minecraftforge.registries.ObjectHolder;
     @ObjectHolder("circle_test")
     public static Block CIRCLE_TEST;
 
-//Register Blocks here
-@SubscribeEvent
-    public static void init(RegistryEvent.Register<Block>event){
+    //Register Blocks here
+    @SubscribeEvent
+    public static void init(RegistryEvent.Register<Block>event)
+    {
+        //simple blocks
+        simpleBlockFactory(event,"infused_stone", Material.ROCK, 3.0F, 5.0f, SoundType.STONE);
+        simpleBlockFactory(event,"chiseled_infused_stone", Material.ROCK, 3.0F, 5.0F, SoundType.STONE);
 
-    //simple blocks
-    simpleBlockFactory(event,"infused_stone", Material.ROCK, 3.0F, 5.0f, SoundType.STONE);
-    simpleBlockFactory(event,"chiseled_infused_stone", Material.ROCK, 3.0F, 5.0F, SoundType.STONE);
+        //blocks with variations
+        ELDER_PLANKS = simpleBlockFactory(event, "elder_planks", Material.WOOD, 2.0F, 3.0F, SoundType.WOOD);
+        ELDER_STAIRS = stairsFactory(event, ELDER_PLANKS, "elder_stairs");
+        ELDER_SLAB = slabFactory(event, ELDER_PLANKS, "elder_slab");
+        ELDER_FENCE = fenceFactory(event, ELDER_PLANKS, "elder_fence");
+        ELDER_DOOR = doorFactory(event, ELDER_PLANKS, "elder_door");
 
-    //blocks with variations
-    ELDER_PLANKS = simpleBlockFactory(event, "elder_planks", Material.WOOD, 2.0F, 3.0F, SoundType.WOOD);
-    ELDER_STAIRS = stairsFactory(event, ELDER_PLANKS, "elder_stairs");
-    ELDER_SLAB = slabFactory(event, ELDER_PLANKS, "elder_slab");
-    ELDER_FENCE = fenceFactory(event, ELDER_PLANKS, "elder_fence");
-    ELDER_DOOR = doorFactory(event, ELDER_PLANKS, "elder_door");
+        INFUSED_BRICKS = simpleBlockFactory(event, "infused_bricks", Material.ROCK, 3.0F, 5.0F, SoundType.STONE);
+        INFUSED_BRICK_STAIRS = stairsFactory(event, INFUSED_BRICKS, "infused_brick_stairs");
+        INFUSED_BRICK_SLAB = slabFactory(event, INFUSED_BRICKS, "infused_brick_slab");
+        INFUSED_BRICK_WALL = wallFactory(event, INFUSED_BRICKS, "infused_brick_wall");
 
-    INFUSED_BRICKS = simpleBlockFactory(event, "infused_bricks", Material.ROCK, 3.0F, 5.0F, SoundType.STONE);
-    INFUSED_BRICK_STAIRS = stairsFactory(event, INFUSED_BRICKS, "infused_brick_stairs");
-    INFUSED_BRICK_SLAB = slabFactory(event, INFUSED_BRICKS, "infused_brick_slab");
-    INFUSED_BRICK_WALL = wallFactory(event, INFUSED_BRICKS, "infused_brick_wall");
-
-    //non-simple block
-    registerBlock(new ElderLogBlock(), "elder_log", event);
-    registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);
-    //registerBlock(new CandleBlock(), "candle", event);
-    registerBlock(new CircleBlock(), "circle_test", event);
-}
+        //non-simple block
+        registerBlock(new ElderLogBlock(), "elder_log", event);
+        registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);
+        //registerBlock(new CandleBlock(), "candle", event);
+        registerBlock(new CircleBlock(), "circle_test", event);
+    }
 
 //Define Block factories here
 
     //simple block factory
-    public static Block simpleBlockFactory(RegistryEvent.Register<Block> event, String registryName, Material material, Float hardness, Float resistance, SoundType sound){
+    public static Block simpleBlockFactory(RegistryEvent.Register<Block> event, String registryName, Material material, Float hardness, Float resistance, SoundType sound)
+    {
         Block block = new Block(Block.Properties
                 .create(material)
                 .hardnessAndResistance(hardness, resistance)
