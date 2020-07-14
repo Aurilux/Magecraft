@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_column",
+  "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "magecraft:blocks/elder_log_top",
     "side": "magecraft:blocks/elder_log"
