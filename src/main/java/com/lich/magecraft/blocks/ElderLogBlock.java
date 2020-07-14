@@ -1,7 +1,7 @@
 package com.lich.magecraft.blocks;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.LogBlock;
+import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -16,13 +16,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
-public class ElderLogBlock extends LogBlock {
+public class ElderLogBlock extends Block {
     private static Float hardness   = 3.0F;
     private static Float resistance = 6.0F;
 
     public ElderLogBlock()
     {
-        super(MaterialColor.WOOD, Properties.create(Material.WOOD).hardnessAndResistance(hardness, resistance).sound(SoundType.WOOD));
+        super(Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(hardness, resistance).sound(SoundType.WOOD));
     }
 
     // To allow "stripping"

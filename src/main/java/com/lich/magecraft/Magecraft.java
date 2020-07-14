@@ -36,8 +36,7 @@ public class Magecraft
     private void doClientStuff(final FMLClientSetupEvent event) {
 
         //to change render types
-        RenderTypeLookup.setRenderLayer(ModBlock.CIRCLE_TEST, RenderType.translucent());
-        RenderTypeLookup.setRenderLayer(ModBlock.ELDER_DOOR, RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlock.ELDER_DOOR, RenderType.getCutout());
 
     }
 

@@ -18,7 +18,7 @@ import net.minecraftforge.registries.ObjectHolder;
     @ObjectHolder("elder_planks")
     public static Block ELDER_PLANKS;
     @ObjectHolder("elder_log")
-    public static LogBlock ELDER_LOG;
+    public static ElderLogBlock ELDER_LOG;
     @ObjectHolder("stripped_elder_log")
     public static StrippedElderLogBlock STRIPPED_ELDER_LOG;
     @ObjectHolder("infused_stone")
@@ -51,8 +51,8 @@ import net.minecraftforge.registries.ObjectHolder;
     public static DoorBlock ELDER_DOOR;
 
     //non simple blocks
-    @ObjectHolder("candle")
-    public static Block CANDLE;
+    //@ObjectHolder("candle")
+    //public static Block CANDLE;
     @ObjectHolder("circle_test")
     public static Block CIRCLE_TEST;
 
@@ -76,10 +76,10 @@ import net.minecraftforge.registries.ObjectHolder;
     INFUSED_BRICK_SLAB = slabFactory(event, INFUSED_BRICKS, "infused_brick_slab");
     INFUSED_BRICK_WALL = wallFactory(event, INFUSED_BRICKS, "infused_brick_wall");
 
-    //non-simple blocks
+    //non-simple block
     registerBlock(new ElderLogBlock(), "elder_log", event);
     registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);
-    registerBlock(new CandleBlock(), "candle", event);
+    //registerBlock(new CandleBlock(), "candle", event);
     registerBlock(new CircleBlock(), "circle_test", event);
 }
 

@@ -87,10 +87,10 @@ public class CandleBlock extends Block {
         return ActionResultType.FAIL;
     }
 
-    @Override
+    /*@Override
     public int getLightValue(BlockState state)
     {
         return state.get(LIT) ? 10: 0;
-    }
+    } */
 
     }

@@ -66,7 +66,7 @@ public class ModItem {
     blockItemFactory (ModBlock.INFUSED_BRICKS,Constants.ITEM_PROPS, event);
     blockItemFactory (ModBlock.INFUSED_BRICK_SLAB,Constants.ITEM_PROPS, event);
     blockItemFactory (ModBlock.INFUSED_BRICK_STAIRS,Constants.ITEM_PROPS, event);
-    blockItemFactory(ModBlock.CANDLE, Constants.ITEM_PROPS, event);
+    //blockItemFactory(ModBlock.CANDLE, Constants.ITEM_PROPS, event);
     blockItemFactory(ModBlock.CIRCLE_TEST, Constants.ITEM_PROPS, event);
 }
 
