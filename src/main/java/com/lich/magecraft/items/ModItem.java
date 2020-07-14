@@ -18,41 +18,16 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItem {
 
-    //name items here
-
-    //materials
-    @ObjectHolder("beeswax")
-    public static Item BEESWAX;
+    // For icon purposes
     @ObjectHolder("crystal_ash")
     public static Item CRYSTAL_ASH;
-    @ObjectHolder("arcanium_ingot")
-    public static Item ARCANIUM_INGOT;
-    @ObjectHolder("arcanium_nugget")
-    public static Item ARCANIUM_NUGGET;
-    @ObjectHolder("blue_quartz")
-    public static Item BLUE_QUARTZ;
-    @ObjectHolder("mana_crystal")
-    public static Item MANA_CRYSTAL;
 
-    //tools
-    @ObjectHolder("arcanium_pickaxe")
-    public static PickaxeItem ARCANIUM_PICKAXE;
 
-//register items here
-
+    //register items here
     @SubscribeEvent
     public static void init(RegistryEvent.Register<Item> event)
     {
-        //materials
-        simpleItemFactory("beeswax", event);
         simpleItemFactory("crystal_ash", event);
-        simpleItemFactory("arcanium_ingot", event);
-        simpleItemFactory("arcanium_nugget", event);
-        simpleItemFactory("blue_quartz",event);
-        simpleItemFactory("mana_crystal", event);
-
-        //tools
-        registerItem("arcanium_pickaxe", new PickaxeItem(ItemTier.IRON, 1, 1, Constants.ITEM_PROPS_NONSTACK), event);
 
         //block items
         blockItemFactory (ModBlock.ELDER_LOG,Constants.ITEM_PROPS, event);
@@ -62,13 +37,6 @@ public class ModItem {
         blockItemFactory (ModBlock.ELDER_STAIRS, Constants.ITEM_PROPS,event);
         blockItemFactory (ModBlock.ELDER_FENCE, Constants.ITEM_PROPS,event);
         blockItemFactory (ModBlock.ELDER_DOOR, Constants.ITEM_PROPS,event);
-        blockItemFactory (ModBlock.CHISELED_INFUSED_STONE,Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.INFUSED_STONE,Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.INFUSED_BRICKS,Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.INFUSED_BRICK_SLAB,Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.INFUSED_BRICK_STAIRS,Constants.ITEM_PROPS, event);
-        //blockItemFactory(ModBlock.CANDLE, Constants.ITEM_PROPS, event);
-        blockItemFactory(ModBlock.CIRCLE_TEST, Constants.ITEM_PROPS, event);
     }
 
     //define item factories here

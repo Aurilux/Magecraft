@@ -1,7 +1,6 @@
 package com.lich.magecraft;
 
 
-import com.lich.magecraft.blocks.CircleBlock;
 import com.lich.magecraft.blocks.ModBlock;
 import com.lich.magecraft.items.ModItem;
 import net.minecraft.client.renderer.RenderType;

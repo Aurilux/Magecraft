@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "magecraft:blocks/chiseled_infused_stone"
-  }
-}

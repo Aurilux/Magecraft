@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "magecraft:items/arcanium_nugget"
-  }
-}
