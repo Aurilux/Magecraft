@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "new textures/infusion_table",
-		"particle": "new textures/infusion_table"
+		"0": "magecraft:blocks/infusion_table",
+		"particle": "magecraft:blocks/infusion_table"
 	},
 	"elements": [
 		{

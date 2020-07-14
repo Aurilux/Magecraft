@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "new textures/mana_accumulator",
-		"particle": "new textures/mana_accumulator"
+		"0": "magecraft:blocks/mana_accumulator",
+		"particle": "magecraft:blocks/mana_accumulator"
 	},
 	"elements": [
 		{

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "new textures/research_table",
-		"1": "item/feather",
-		"particle": "new textures/research_table"
+		"0": "magecraft:blocks/research_table",
+		"1": "minecraft:item/feather",
+		"particle": "magecraft:blocks/research_table"
 	},
 	"elements": [
 		{
