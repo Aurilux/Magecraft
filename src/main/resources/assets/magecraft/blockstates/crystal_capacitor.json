@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "magecraft:block/crystal_capacitor"
+    }
+  }
+}
