@@ -56,14 +56,14 @@ public class Magecraft
     crystal_capacitor_mk2
     elder_bookshelf 1-4
     elder_trapdoor
-    mana_battery /
-    smokey_quartz_block /
-    smokey_quartz_ore /
-    smokey_quartz_pillar /
-    infusion_table /
-    mana_accumulator /
-    research_table /
-    spell_table /
+    mana_battery
+    smokey_quartz_block
+    smokey_quartz_ore
+    smokey_quartz_pillar
+    infusion_table
+    mana_accumulator
+    research_table
+    spell_table
     - add items:
     coldiron:
     *coldiron axe
@@ -75,5 +75,5 @@ public class Magecraft
     *coldiron sword
     mana_crystal
     mana_orb
-    smokey_quartz
+    smokey_quartz !
  */
