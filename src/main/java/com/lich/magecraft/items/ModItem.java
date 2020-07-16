@@ -30,6 +30,13 @@ public class ModItem {
         simpleItemFactory("crystal_ash", event);
 
         //block items
+        blockItemFactory (ModBlock.CHISELED_SMOKEY_QUARTZ, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.SMOKEY_QUARTZ_BLOCK, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.SMOKEY_QUARTZ_ORE, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.SMOKEY_QUARTZ_PILLAR, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.CRYSTAL_CAPACITOR, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.CRYSTAL_CAPACITOR_MK2, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.COLDIRON_BLOCK, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.ELDER_LOG,Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.STRIPPED_ELDER_LOG,Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.ELDER_PLANKS,Constants.ITEM_PROPS, event);
@@ -37,6 +44,8 @@ public class ModItem {
         blockItemFactory (ModBlock.ELDER_STAIRS, Constants.ITEM_PROPS,event);
         blockItemFactory (ModBlock.ELDER_FENCE, Constants.ITEM_PROPS,event);
         blockItemFactory (ModBlock.ELDER_DOOR, Constants.ITEM_PROPS,event);
+        blockItemFactory (ModBlock.ELDER_BOOKSHELF, Constants.ITEM_PROPS,event);
+        blockItemFactory (ModBlock.ELDER_TRAPDOOR, Constants.ITEM_PROPS,event);
     }
 
     //define item factories here

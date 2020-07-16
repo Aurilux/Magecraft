@@ -1,12 +1,5 @@
 {
   "itemGroup.magecraftTab": "Magecraft",
-  "item.magecraft.beeswax": "Beeswax",
-  "item.magecraft.arcanium_ingot": "Arcanium Ingot",
-  "item.magecraft.arcanium_nugget": "Arcanium Nugget",
-  "item.magecraft.lapis_ash": "Lapis Ash",
-  "item.magecraft.arcanium_pickaxe": "Arcanium Pickaxe",
-  "item.magecraft.crystal_ash": "Crystal Ash",
-  "item.magecraft.blue_quartz": "Blue Quartz",
   "item.magecraft.mana_crystal": "Mana Crystal",
   "block.magecraft.elder_log": "Elderwood Log",
   "block.magecraft.stripped_elder_log": "Stripped Elderwood Log",
@@ -15,5 +8,13 @@
   "block.magecraft.elder_slab": "Elderwood Slab",
   "block.magecraft.elder_fence": "Elderwood Fence",
   "block.magecraft.elder_door": "Elderwood Door",
-  "block.magecraft.candle": "Candle"
+  "block.magecraft.chiseled_smokey_quartz": "Chiseled Smokey Quartz",
+  "block.magecraft.coldiron_block" : "Coldiron Block",
+  "block.magecraft.smokey_quartz_block": "Smokey Quartz Block",
+  "block.magecraft.smokey_quartz_ore": "Smokey Quartz Ore",
+  "block.magecraft.smokey_quartz_pillar": "Smokey Quartz Pillar",
+  "block.magecraft.crystal_capacitor": "Crystal Capacitor",
+  "block.magecraft.crystal_capacitor_mk2": "Crystal Capacitor MK2",
+  "block.magecraft.elder_bookshelf": "Elder Bookshelf",
+  "block.magecraft.elder_trapdoor": "Elder Trapdoor"
 }

@@ -21,6 +21,22 @@ public class ModBlock {
     public static ElderLogBlock ELDER_LOG;
     @ObjectHolder("stripped_elder_log")
     public static StrippedElderLogBlock STRIPPED_ELDER_LOG;
+    @ObjectHolder("chiseled_smokey_quartz")
+    public static Block CHISELED_SMOKEY_QUARTZ;
+    @ObjectHolder("coldiron_block")
+    public static Block COLDIRON_BLOCK;
+    @ObjectHolder("smokey_quartz_block")
+    public static Block SMOKEY_QUARTZ_BLOCK;
+    @ObjectHolder("smokey_quartz_ore")
+    public static Block SMOKEY_QUARTZ_ORE;
+    @ObjectHolder("smokey_quartz_pillar")
+    public static Block SMOKEY_QUARTZ_PILLAR;
+    @ObjectHolder("crystal_capacitor")
+    public static CrystalCapacitorBlock CRYSTAL_CAPACITOR;
+    @ObjectHolder("crystal_capacitor_mk2")
+    public static CrystalCapacitorMk2Block CRYSTAL_CAPACITOR_MK2;
+    @ObjectHolder("elder_bookshelf")
+    public static ElderBookshelfBlock ELDER_BOOKSHELF;
 
     //stairs
     @ObjectHolder("elder_stairs")
@@ -37,25 +53,43 @@ public class ModBlock {
     //doors gates and trapdoors
     @ObjectHolder("elder_door")
     public static DoorBlock ELDER_DOOR;
+    @ObjectHolder("elder_trapdoor")
+    public static TrapDoorBlock ELDER_TRAPDOOR;
 
     //Register Blocks here
     @SubscribeEvent
     public static void init(RegistryEvent.Register<Block>event)
     {
 
-        //blocks with variations
+        // simple blocks
         ELDER_PLANKS = simpleBlockFactory(event, "elder_planks", Material.WOOD, 2.0F, 3.0F, SoundType.WOOD);
+
+        COLDIRON_BLOCK = simpleBlockFactory(event, "coldiron_block", Material.IRON, 4.0F, 3.0F, SoundType.METAL);
+
+        CHISELED_SMOKEY_QUARTZ = simpleBlockFactory(event, "chiseled_smokey_quartz", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
+        SMOKEY_QUARTZ_BLOCK = simpleBlockFactory(event, "smokey_quartz_block", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
+        SMOKEY_QUARTZ_ORE = simpleBlockFactory(event, "smokey_quartz_ore", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
+        SMOKEY_QUARTZ_PILLAR = simpleBlockFactory(event, "smokey_quartz_pillar", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
+
+
+        // blocks with variations
         ELDER_STAIRS = stairsFactory(event, ELDER_PLANKS, "elder_stairs");
         ELDER_SLAB = slabFactory(event, ELDER_PLANKS, "elder_slab");
         ELDER_FENCE = fenceFactory(event, ELDER_PLANKS, "elder_fence");
         ELDER_DOOR = doorFactory(event, ELDER_PLANKS, "elder_door");
+        ELDER_TRAPDOOR = trapdoorFactory(event, ELDER_TRAPDOOR, "elder_trapdoor");
 
-        //non-simple block
+        // non-simple block
         registerBlock(new ElderLogBlock(), "elder_log", event);
         registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);
+        registerBlock(new ElderBookshelfBlock(), "elder_bookshelf", event);
+
+        registerBlock(new CrystalCapacitorBlock(), "crystal_capacitor", event);
+        registerBlock(new CrystalCapacitorMk2Block(), "crystal_capacitor_mk2", event);
+
     }
 
-//Define Block factories here
+    //Define Block factories here
 
     //simple block factory
     public static Block simpleBlockFactory(RegistryEvent.Register<Block> event, String registryName, Material material, Float hardness, Float resistance, SoundType sound)
@@ -123,6 +157,17 @@ public class ModBlock {
 
         return doorBlock;
     }
+
+    // trapdoor factory
+    public static TrapDoorBlock trapdoorFactory(RegistryEvent.Register<Block> event, Block block, String registryName) {
+        TrapDoorBlock trapDoorBlock = new TrapDoorBlock(Block.Properties.from(block));
+
+        trapDoorBlock.setRegistryName(registryName);
+        event.getRegistry().register(trapDoorBlock);
+
+        return trapDoorBlock;
+    }
+
     //non-simple block factory
     public static void registerBlock(Block block, String registryName, RegistryEvent.Register<Block> event)
     {

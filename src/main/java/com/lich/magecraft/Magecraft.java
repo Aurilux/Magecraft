@@ -50,16 +50,16 @@ public class Magecraft
 
 /* Magecraft TODO
     - add blocks:
-    chiseled_smokey_quartz
-    coldiron_block
-    crystal_capacitor
-    crystal_capacitor_mk2
-    elder_bookshelf 1-4
+    chiseled_smokey_quartz x
+    coldiron_block x
+    crystal_capacitor x
+    crystal_capacitor_mk2 x
+    elder_bookshelf 1-4 x
     elder_trapdoor
     mana_battery
-    smokey_quartz_block
-    smokey_quartz_ore
-    smokey_quartz_pillar
+    smokey_quartz_block x
+    smokey_quartz_ore x
+    smokey_quartz_pillar x
     infusion_table
     mana_accumulator
     research_table
@@ -75,5 +75,5 @@ public class Magecraft
     *coldiron sword
     mana_crystal
     mana_orb
-    smokey_quartz !
+    smokey_quartz
  */

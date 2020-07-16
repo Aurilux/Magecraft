@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "magecraft:blocks/smokey_quartz_pillar_horizontal",
+      "model": "magecraft:block/smokey_quartz_pillar_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "magecraft:blocks/smokey_quartz_pillar"
+      "model": "magecraft:block/smokey_quartz_pillar"
     },
     "axis=z": {
-      "model": "magecraft:blocks/smokey_quartz_pillar_horizontal",
+      "model": "magecraft:block/smokey_quartz_pillar_horizontal",
       "x": 90
     }
   }
