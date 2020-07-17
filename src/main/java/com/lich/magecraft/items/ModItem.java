@@ -46,6 +46,10 @@ public class ModItem {
         blockItemFactory (ModBlock.ELDER_DOOR, Constants.ITEM_PROPS,event);
         blockItemFactory (ModBlock.ELDER_BOOKSHELF, Constants.ITEM_PROPS,event);
         blockItemFactory (ModBlock.ELDER_TRAPDOOR, Constants.ITEM_PROPS,event);
+        blockItemFactory (ModBlock.INFUSION_TABLE, Constants.ITEM_PROPS,event);
+        blockItemFactory (ModBlock.SPELL_TABLE, Constants.ITEM_PROPS,event);
+        blockItemFactory (ModBlock.RESEARCH_TABLE, Constants.ITEM_PROPS,event);
+        blockItemFactory (ModBlock.MANA_ACCUMULATOR, Constants.ITEM_PROPS,event);
     }
 
     //define item factories here

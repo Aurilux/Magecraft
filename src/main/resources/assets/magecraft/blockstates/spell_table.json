@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "magecraft:block/spell_table.json"
+      "model": "magecraft:block/spell_table"
     }
   }
 }

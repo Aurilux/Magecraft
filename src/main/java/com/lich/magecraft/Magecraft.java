@@ -36,6 +36,9 @@ public class Magecraft
 
         //to change render types
         RenderTypeLookup.setRenderLayer(ModBlock.ELDER_DOOR, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlock.RESEARCH_TABLE, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlock.SPELL_TABLE, RenderType.getCutout());
+
 
     }
 
@@ -56,11 +59,10 @@ public class Magecraft
     crystal_capacitor_mk2 x
     elder_bookshelf 1-4 x
     elder_trapdoor
-    mana_battery
     smokey_quartz_block x
     smokey_quartz_ore x
     smokey_quartz_pillar x
-    infusion_table
+    infusion_table x
     mana_accumulator
     research_table
     spell_table

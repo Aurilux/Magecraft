@@ -15,6 +15,11 @@
   "block.magecraft.smokey_quartz_pillar": "Smokey Quartz Pillar",
   "block.magecraft.crystal_capacitor": "Crystal Capacitor",
   "block.magecraft.crystal_capacitor_mk2": "Crystal Capacitor MK2",
-  "block.magecraft.elder_bookshelf": "Elder Bookshelf",
-  "block.magecraft.elder_trapdoor": "Elder Trapdoor"
+  "block.magecraft.elder_bookshelf": "Elderwood Bookshelf",
+  "block.magecraft.elder_trapdoor": "Elderwood Trapdoor",
+  "block.magecraft.infusion_table": "Infusion Table",
+  "block.magecraft.spell_table": "Spell Table",
+  "block.magecraft.research_table": "Research Table",
+  "block.magecraft.mana_accumulator": "Mana Accumulator"
+
 }

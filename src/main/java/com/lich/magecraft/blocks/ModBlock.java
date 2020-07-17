@@ -38,6 +38,14 @@ public class ModBlock {
     public static CrystalCapacitorMk2Block CRYSTAL_CAPACITOR_MK2;
     @ObjectHolder("elder_bookshelf")
     public static ElderBookshelfBlock ELDER_BOOKSHELF;
+    @ObjectHolder("infusion_table")
+    public static InfusionTableBlock INFUSION_TABLE;
+    @ObjectHolder("spell_table")
+    public static SpellTableBlock SPELL_TABLE;
+    @ObjectHolder("research_table")
+    public static ResearchTableBlock RESEARCH_TABLE;
+    @ObjectHolder("mana_accumulator")
+    public static ManaAccumulatorBlock MANA_ACCUMULATOR;
 
     //stairs
     @ObjectHolder("elder_stairs")
@@ -85,6 +93,11 @@ public class ModBlock {
         registerBlock(new ElderLogBlock(), "elder_log", event);
         registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);
         registerBlock(new ElderBookshelfBlock(), "elder_bookshelf", event);
+
+        registerBlock(new InfusionTableBlock(), "infusion_table", event);
+        registerBlock(new SpellTableBlock(), "spell_table", event);
+        registerBlock(new ResearchTableBlock(), "research_table", event);
+        registerBlock(new ManaAccumulatorBlock(), "mana_accumulator", event);
 
         registerBlock(new CrystalCapacitorBlock(), "crystal_capacitor", event);
         registerBlock(new CrystalCapacitorMk2Block(), "crystal_capacitor_mk2", event);
