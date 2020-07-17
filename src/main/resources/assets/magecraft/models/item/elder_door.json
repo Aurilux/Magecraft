@@ -1,3 +1,6 @@
 {
-  "parent": "magecraft:block/elder_door_top"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "magecraft:blocks/elder_door"
+  }
 }

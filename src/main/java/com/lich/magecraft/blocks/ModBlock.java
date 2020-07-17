@@ -3,6 +3,7 @@ package com.lich.magecraft.blocks;
 import com.lich.magecraft.Magecraft;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -69,7 +70,6 @@ public class ModBlock {
         CHISELED_SMOKEY_QUARTZ = simpleBlockFactory(event, "chiseled_smokey_quartz", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
         SMOKEY_QUARTZ_BLOCK = simpleBlockFactory(event, "smokey_quartz_block", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
         SMOKEY_QUARTZ_ORE = simpleBlockFactory(event, "smokey_quartz_ore", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
-        SMOKEY_QUARTZ_PILLAR = simpleBlockFactory(event, "smokey_quartz_pillar", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
 
 
         // blocks with variations
@@ -78,6 +78,8 @@ public class ModBlock {
         ELDER_FENCE = fenceFactory(event, ELDER_PLANKS, "elder_fence");
         ELDER_DOOR = doorFactory(event, ELDER_PLANKS, "elder_door");
         ELDER_TRAPDOOR = trapdoorFactory(event, ELDER_TRAPDOOR, "elder_trapdoor");
+
+        SMOKEY_QUARTZ_PILLAR = rotatedPillarBlockFactory(event, AbstractBlock.Properties.create(Material.ROCK, MaterialColor.SNOW).hardnessAndResistance(0.8F).sound(SoundType.STONE), "smokey_quartz_pillar");
 
         // non-simple block
         registerBlock(new ElderLogBlock(), "elder_log", event);
@@ -160,12 +162,23 @@ public class ModBlock {
 
     // trapdoor factory
     public static TrapDoorBlock trapdoorFactory(RegistryEvent.Register<Block> event, Block block, String registryName) {
-        TrapDoorBlock trapDoorBlock = new TrapDoorBlock(Block.Properties.from(block));
+        TrapDoorBlock trapDoorBlock = new TrapDoorBlock(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(3.0F).sound(SoundType.WOOD).notSolid());
 
         trapDoorBlock.setRegistryName(registryName);
         event.getRegistry().register(trapDoorBlock);
 
         return trapDoorBlock;
+    }
+
+    public static RotatedPillarBlock rotatedPillarBlockFactory(RegistryEvent.Register<Block> event, AbstractBlock.Properties properties, String registryName)
+    {
+        // helper for creating rotated pillar blocks
+        RotatedPillarBlock rotatedPillarBlock = new RotatedPillarBlock(properties);
+
+        rotatedPillarBlock.setRegistryName(registryName);
+        event.getRegistry().register(rotatedPillarBlock);
+
+        return rotatedPillarBlock;
     }
 
     //non-simple block factory
