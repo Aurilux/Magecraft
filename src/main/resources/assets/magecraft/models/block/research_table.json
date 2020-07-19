@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "magecraft:blocks/research_table",
-		"1": "item/feather",
+		"1": "magecraft:item/feather",
 		"particle": "magecraft:blocks/research_table"
 	},
 	"elements": [
@@ -106,10 +106,10 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_righthand": {
-			"scale": [0.5, 0.5, 0.5]
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"scale": [0.5, 0.5, 0.5]
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
 			"scale": [0.5, 0.5, 0.5]
