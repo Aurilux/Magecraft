@@ -29,23 +29,23 @@ public class ModBlock {
     @ObjectHolder("smokey_quartz_block")
     public static Block SMOKEY_QUARTZ_BLOCK;
     @ObjectHolder("smokey_quartz_ore")
-    public static Block SMOKEY_QUARTZ_ORE;
+    public static SmokeyQuartzOre SMOKEY_QUARTZ_ORE;
     @ObjectHolder("smokey_quartz_pillar")
     public static Block SMOKEY_QUARTZ_PILLAR;
     @ObjectHolder("crystal_capacitor")
-    public static CrystalCapacitorBlock CRYSTAL_CAPACITOR;
+    public static CrystalCapacitor CRYSTAL_CAPACITOR;
     @ObjectHolder("crystal_capacitor_mk2")
-    public static CrystalCapacitorMk2Block CRYSTAL_CAPACITOR_MK2;
+    public static CrystalCapacitorMk2 CRYSTAL_CAPACITOR_MK2;
     @ObjectHolder("elder_bookshelf")
     public static ElderBookshelfBlock ELDER_BOOKSHELF;
     @ObjectHolder("infusion_table")
-    public static InfusionTableBlock INFUSION_TABLE;
+    public static InfusionTable INFUSION_TABLE;
     @ObjectHolder("spell_table")
-    public static SpellTableBlock SPELL_TABLE;
+    public static SpellTable SPELL_TABLE;
     @ObjectHolder("research_table")
-    public static ResearchTableBlock RESEARCH_TABLE;
+    public static ResearchTable RESEARCH_TABLE;
     @ObjectHolder("mana_accumulator")
-    public static ManaAccumulatorBlock MANA_ACCUMULATOR;
+    public static ManaAccumulator MANA_ACCUMULATOR;
 
     //stairs
     @ObjectHolder("elder_stairs")
@@ -77,7 +77,6 @@ public class ModBlock {
 
         CHISELED_SMOKEY_QUARTZ = simpleBlockFactory(event, "chiseled_smokey_quartz", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
         SMOKEY_QUARTZ_BLOCK = simpleBlockFactory(event, "smokey_quartz_block", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
-        SMOKEY_QUARTZ_ORE = simpleBlockFactory(event, "smokey_quartz_ore", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
 
 
         // blocks with variations
@@ -90,17 +89,19 @@ public class ModBlock {
         SMOKEY_QUARTZ_PILLAR = rotatedPillarBlockFactory(event, AbstractBlock.Properties.create(Material.ROCK, MaterialColor.SNOW).hardnessAndResistance(0.8F).sound(SoundType.STONE), "smokey_quartz_pillar");
 
         // non-simple block
+        registerBlock(new SmokeyQuartzOre(), "smokey_quartz_ore", event);
+
         registerBlock(new ElderLogBlock(), "elder_log", event);
         registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);
         registerBlock(new ElderBookshelfBlock(), "elder_bookshelf", event);
 
-        registerBlock(new InfusionTableBlock(), "infusion_table", event);
-        registerBlock(new SpellTableBlock(), "spell_table", event);
-        registerBlock(new ResearchTableBlock(), "research_table", event);
-        registerBlock(new ManaAccumulatorBlock(), "mana_accumulator", event);
+        registerBlock(new InfusionTable(), "infusion_table", event);
+        registerBlock(new SpellTable(), "spell_table", event);
+        registerBlock(new ResearchTable(), "research_table", event);
+        registerBlock(new ManaAccumulator(), "mana_accumulator", event);
 
-        registerBlock(new CrystalCapacitorBlock(), "crystal_capacitor", event);
-        registerBlock(new CrystalCapacitorMk2Block(), "crystal_capacitor_mk2", event);
+        registerBlock(new CrystalCapacitor(), "crystal_capacitor", event);
+        registerBlock(new CrystalCapacitorMk2(), "crystal_capacitor_mk2", event);
 
     }
 

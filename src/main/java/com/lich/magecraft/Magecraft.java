@@ -38,8 +38,6 @@ public class Magecraft
         RenderTypeLookup.setRenderLayer(ModBlock.ELDER_DOOR, RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlock.RESEARCH_TABLE, RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlock.SPELL_TABLE, RenderType.getCutout());
-
-
     }
 
     public static final ItemGroup TAB = new ItemGroup("magecraftTab") {
