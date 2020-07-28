@@ -8,7 +8,11 @@ import net.minecraft.block.material.MaterialColor;
 public class ElderBookshelfBlock extends Block {
 
     public ElderBookshelfBlock() {
-        super(Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(0.5F).sound(SoundType.WOOD));
+        super(Properties.create(Material.WOOD)
+                .hardnessAndResistance(0.5F)
+                .sound(SoundType.WOOD));
     }
+
+
 
 }

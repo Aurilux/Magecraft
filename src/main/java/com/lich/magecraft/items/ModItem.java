@@ -3,11 +3,8 @@ package com.lich.magecraft.items;
 import com.lich.magecraft.Magecraft;
 import com.lich.magecraft.blocks.ModBlock;
 import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import com.lich.magecraft.util.Constants;
-import net.minecraft.item.ItemTier;
-import net.minecraft.item.PickaxeItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -18,16 +15,59 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItem {
 
-    // For icon purposes
+    // tool material for coldiron tools/weapons
+    @ObjectHolder("coldiron_pickaxe")
+    public static Item COLDIRON_PICKAXE;
+    @ObjectHolder("coldiron_axe")
+    public static Item COLDIRON_AXE;
+    @ObjectHolder("coldiron_shovel")
+    public static Item COLDIRON_SHOVEL;
+    @ObjectHolder("coldiron_hoe")
+    public static Item COLDIRON_HOE;
+    @ObjectHolder("coldiron_sword")
+    public static Item COLDIRON_SWORD;
+
+    // materials
+    @ObjectHolder("coldiron_ingot")
+    public static Item COLDIRON_INGOT;
+    @ObjectHolder("coldiron_nugget")
+    public static Item COLDIRON_NUGGET;
+    @ObjectHolder("smokey_quartz")
+    public static Item SMOKEY_QUARTZ;
+
+    // for icon purposes
     @ObjectHolder("crystal_ash")
     public static Item CRYSTAL_ASH;
 
+    // mana
+    @ObjectHolder("mana_crystal")
+    public static Item MANA_CRYSTAL;
+    @ObjectHolder("mana_orb")
+    public static Item MANA_ORB;
 
     //register items here
     @SubscribeEvent
     public static void init(RegistryEvent.Register<Item> event)
     {
         simpleItemFactory("crystal_ash", event);
+
+        // coldiron tools
+        registerItem("coldiron_pickaxe", new PickaxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
+        registerItem("coldiron_axe", new AxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
+        registerItem("coldiron_hoe", new HoeItem(ItemTier.IRON, -2, -1.0F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
+        registerItem("coldiron_shovel", new ShovelItem(ItemTier.IRON, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
+
+        // coldiron sword
+        registerItem("iron_sword", new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)), event);
+
+        // materials
+        registerItem("coldiron_ingot", new Item(new Item.Properties().group(ItemGroup.MATERIALS)), event);
+        registerItem("coldiron_nugget", new Item(new Item.Properties().group(ItemGroup.MATERIALS)), event);
+        registerItem("smokey_quartz", new Item(new Item.Properties().group(ItemGroup.MATERIALS)), event);
+
+        // mana stuff
+        registerItem("mana_crystal", new ManaCrystal(new Item.Properties().group(ItemGroup.MISC)), event);
+        registerItem("mana_orb", new ManaOrb(new Item.Properties().group(ItemGroup.MISC)), event);
 
         //block items
         blockItemFactory (ModBlock.CHISELED_SMOKEY_QUARTZ, Constants.ITEM_PROPS, event);

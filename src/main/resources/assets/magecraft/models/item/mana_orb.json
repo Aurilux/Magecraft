@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "magecraft:item/mana_orb"
+    "layer0": "magecraft:items/mana_orb"
   }
 }

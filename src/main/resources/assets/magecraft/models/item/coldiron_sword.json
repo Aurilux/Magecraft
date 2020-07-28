@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "magecraft:item/coldiron_sword"
+    "layer0": "magecraft:items/coldiron_sword"
   }
 }

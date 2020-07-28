@@ -61,17 +61,17 @@ public class Magecraft
     smokey_quartz_ore x
     smokey_quartz_pillar x
     infusion_table x
-    mana_accumulator
-    research_table
-    spell_table
+    mana_accumulator x
+    research_table x
+    spell_table x
     - add items:
     coldiron:
-    *coldiron axe
-    *coldiron hoe
+    *coldiron axe /
+    *coldiron hoe /
     *coldiron igot
     *coldiron nugget
-    *coldiron pickaxe
-    *coldiron shovel
+    *coldiron pickaxe /
+    *coldiron shovel /
     *coldiron sword
     mana_crystal
     mana_orb
