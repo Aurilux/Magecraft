@@ -23,7 +23,8 @@ public class ModOreBlock {
         for (Biome biome : ForgeRegistries.BIOMES) {
             // if biome is in the overworld
             if ((biome.getCategory() != Biome.Category.NETHER) && (biome.getCategory() != Biome.Category.THEEND)) {
-                genOre(biome, 10,8, 5, 20, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlock.SMOKEY_QUARTZ_ORE.getBlock().getDefaultState(), 8);
+                // smokey quartz ore
+                genOre(biome, 5,8, 5, 20, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlock.SMOKEY_QUARTZ_ORE.getBlock().getDefaultState(), 8);
             }
         }
     }

@@ -52,22 +52,22 @@ public class ModItem {
         simpleItemFactory("crystal_ash", event);
 
         // coldiron tools
-        registerItem("coldiron_pickaxe", new PickaxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
-        registerItem("coldiron_axe", new AxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
-        registerItem("coldiron_hoe", new HoeItem(ItemTier.IRON, -2, -1.0F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
-        registerItem("coldiron_shovel", new ShovelItem(ItemTier.IRON, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroup.TOOLS)), event);
+        registerItem("coldiron_pickaxe", new PickaxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(Magecraft.TAB)), event);
+        registerItem("coldiron_axe", new AxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(Magecraft.TAB)), event);
+        registerItem("coldiron_hoe", new HoeItem(ItemTier.IRON, -2, -1.0F, (new Item.Properties()).group(Magecraft.TAB)), event);
+        registerItem("coldiron_shovel", new ShovelItem(ItemTier.IRON, 1.5F, -3.0F, (new Item.Properties()).group(Magecraft.TAB)), event);
 
         // coldiron sword
-        registerItem("iron_sword", new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)), event);
+        registerItem("iron_sword", new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(Magecraft.TAB)), event);
 
         // materials
-        registerItem("coldiron_ingot", new Item(new Item.Properties().group(ItemGroup.MATERIALS)), event);
-        registerItem("coldiron_nugget", new Item(new Item.Properties().group(ItemGroup.MATERIALS)), event);
-        registerItem("smokey_quartz", new Item(new Item.Properties().group(ItemGroup.MATERIALS)), event);
+        registerItem("coldiron_ingot", new Item(new Item.Properties().group(Magecraft.TAB)), event);
+        registerItem("coldiron_nugget", new Item(new Item.Properties().group(Magecraft.TAB)), event);
+        registerItem("smokey_quartz", new Item(new Item.Properties().group(Magecraft.TAB)), event);
 
         // mana stuff
-        registerItem("mana_crystal", new ManaCrystal(new Item.Properties().group(ItemGroup.MISC)), event);
-        registerItem("mana_orb", new ManaOrb(new Item.Properties().group(ItemGroup.MISC)), event);
+        registerItem("mana_crystal", new ManaCrystal(new Item.Properties().group(Magecraft.TAB)), event);
+        registerItem("mana_orb", new ManaOrb(new Item.Properties().group(Magecraft.TAB)), event);
 
         //block items
         blockItemFactory (ModBlock.CHISELED_SMOKEY_QUARTZ, Constants.ITEM_PROPS, event);
