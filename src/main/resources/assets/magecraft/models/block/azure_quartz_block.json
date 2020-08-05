@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "magecraft:blocks/smokey_quartz_ore"
+    "all": "magecraft:blocks/azure_quartz_block"
   }
 }

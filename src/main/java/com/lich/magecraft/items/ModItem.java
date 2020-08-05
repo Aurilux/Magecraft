@@ -8,7 +8,6 @@ import com.lich.magecraft.util.Constants;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 
 @ObjectHolder("magecraft")
@@ -32,12 +31,8 @@ public class ModItem {
     public static Item COLDIRON_INGOT;
     @ObjectHolder("coldiron_nugget")
     public static Item COLDIRON_NUGGET;
-    @ObjectHolder("smokey_quartz")
-    public static Item SMOKEY_QUARTZ;
-
-    // for icon purposes
-    @ObjectHolder("crystal_ash")
-    public static Item CRYSTAL_ASH;
+    @ObjectHolder("azure_quartz")
+    public static Item AZURE_QUARTZ;
 
     // mana
     @ObjectHolder("mana_crystal")
@@ -49,8 +44,6 @@ public class ModItem {
     @SubscribeEvent
     public static void init(RegistryEvent.Register<Item> event)
     {
-        simpleItemFactory("crystal_ash", event);
-
         // coldiron tools
         registerItem("coldiron_pickaxe", new PickaxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(Magecraft.TAB)), event);
         registerItem("coldiron_axe", new AxeItem(ItemTier.IRON, 1, -2.8F, (new Item.Properties()).group(Magecraft.TAB)), event);
@@ -58,22 +51,22 @@ public class ModItem {
         registerItem("coldiron_shovel", new ShovelItem(ItemTier.IRON, 1.5F, -3.0F, (new Item.Properties()).group(Magecraft.TAB)), event);
 
         // coldiron sword
-        registerItem("iron_sword", new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(Magecraft.TAB)), event);
+        registerItem("coldiron_sword", new SwordItem(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(Magecraft.TAB)), event);
 
         // materials
         registerItem("coldiron_ingot", new Item(new Item.Properties().group(Magecraft.TAB)), event);
         registerItem("coldiron_nugget", new Item(new Item.Properties().group(Magecraft.TAB)), event);
-        registerItem("smokey_quartz", new Item(new Item.Properties().group(Magecraft.TAB)), event);
+        registerItem("azure_quartz", new Item(new Item.Properties().group(Magecraft.TAB)), event);
 
         // mana stuff
         registerItem("mana_crystal", new ManaCrystal(new Item.Properties().group(Magecraft.TAB)), event);
         registerItem("mana_orb", new ManaOrb(new Item.Properties().group(Magecraft.TAB)), event);
 
         //block items
-        blockItemFactory (ModBlock.CHISELED_SMOKEY_QUARTZ, Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.SMOKEY_QUARTZ_BLOCK, Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.SMOKEY_QUARTZ_ORE, Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.SMOKEY_QUARTZ_PILLAR, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.CHISELED_AZURE_QUARTZ, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.AZURE_QUARTZ_BLOCK, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.AZURE_QUARTZ_ORE, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.AZURE_QUARTZ_PILLAR, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.CRYSTAL_CAPACITOR, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.CRYSTAL_CAPACITOR_MK2, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.COLDIRON_BLOCK, Constants.ITEM_PROPS, event);

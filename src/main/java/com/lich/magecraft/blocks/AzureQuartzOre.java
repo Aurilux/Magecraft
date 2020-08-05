@@ -7,9 +7,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 
-public class SmokeyQuartzOre extends Block {
+public class AzureQuartzOre extends Block {
 
-    public SmokeyQuartzOre() {
+    public AzureQuartzOre() {
         super(AbstractBlock.Properties.create(Material.ROCK)
                 .func_235861_h_()
                 .hardnessAndResistance(3.0F, 3.0F));

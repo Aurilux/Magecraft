@@ -2,6 +2,7 @@ package com.lich.magecraft;
 
 
 import com.lich.magecraft.blocks.ModBlock;
+import com.lich.magecraft.entities.EntitiesInit;
 import com.lich.magecraft.items.ModItem;
 import com.lich.magecraft.mana.IMana;
 import com.lich.magecraft.mana.Mana;
@@ -18,6 +19,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -37,6 +39,8 @@ public class Magecraft {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onAttachCapabilities);
+
+        EntitiesInit.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -68,7 +72,7 @@ public class Magecraft {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModItem.CRYSTAL_ASH);
+            return new ItemStack(ModItem.MANA_ORB);
         }
     };
 }

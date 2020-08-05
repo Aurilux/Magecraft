@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "magecraft:blocks/smokey_quartz_top",
-    "side": "magecraft:blocks/smokey_quartz_pillar"
-  }
-}

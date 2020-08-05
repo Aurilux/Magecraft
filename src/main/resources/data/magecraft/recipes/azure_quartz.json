@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "magecraft:smokey_quartz_ore"
+    "item": "magecraft:azure_quartz_ore"
   },
-  "result": "magecraft:smokey_quartz",
+  "result": "magecraft:azure_quartz",
   "experience": 1,
   "cookingtime": 200
 }
