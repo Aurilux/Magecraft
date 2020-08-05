@@ -2,14 +2,11 @@ package com.lich.magecraft.entities;
 
 import com.lich.magecraft.Magecraft;
 import com.lich.magecraft.entities.mote.MoteEntity;
-import net.minecraft.block.Block;
-import net.minecraft.client.tutorial.Tutorial;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -29,6 +26,8 @@ public class EntitiesInit {
     @SubscribeEvent
     public static void initEntites(FMLLoadCompleteEvent event) {
         registerEntityWorldSpawn(MOTE.get(), EntityClassification.AMBIENT, true);
+
+        GlobalEntityTypeAttributes.put(MOTE.get(), MoteEntity.healthAttribute().func_233813_a_());
     }
 
 

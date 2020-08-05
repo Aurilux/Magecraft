@@ -3,6 +3,7 @@ package com.lich.magecraft.client.model;
 import com.lich.magecraft.entities.mote.MoteEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 
@@ -11,6 +12,7 @@ public class MoteModel<T extends MoteEntity> extends EntityModel<T> {
     private final ModelRenderer stars;
 
     public MoteModel() {
+        super(RenderType::getEntityTranslucent);
         textureWidth = 16;
         textureHeight = 8;
 
