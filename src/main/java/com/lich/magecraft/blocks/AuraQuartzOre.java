@@ -7,9 +7,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 
-public class AzureQuartzOre extends Block {
+public class AuraQuartzOre extends Block {
 
-    public AzureQuartzOre() {
+    public AuraQuartzOre() {
         super(AbstractBlock.Properties.create(Material.ROCK)
                 .func_235861_h_()
                 .hardnessAndResistance(3.0F, 3.0F));

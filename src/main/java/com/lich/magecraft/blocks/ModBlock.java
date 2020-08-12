@@ -22,16 +22,16 @@ public class ModBlock {
     public static ElderLogBlock ELDER_LOG;
     @ObjectHolder("stripped_elder_log")
     public static StrippedElderLogBlock STRIPPED_ELDER_LOG;
-    @ObjectHolder("chiseled_azure_quartz")
-    public static Block CHISELED_AZURE_QUARTZ;
+    @ObjectHolder("chiseled_aura_quartz")
+    public static Block CHISELED_AURA_QUARTZ;
     @ObjectHolder("coldiron_block")
     public static Block COLDIRON_BLOCK;
-    @ObjectHolder("azure_quartz_block")
-    public static Block AZURE_QUARTZ_BLOCK;
-    @ObjectHolder("azure_quartz_ore")
-    public static AzureQuartzOre AZURE_QUARTZ_ORE;
-    @ObjectHolder("azure_quartz_pillar")
-    public static Block AZURE_QUARTZ_PILLAR;
+    @ObjectHolder("aura_quartz_block")
+    public static Block AURA_QUARTZ_BLOCK;
+    @ObjectHolder("aura_quartz_ore")
+    public static AuraQuartzOre AURA_QUARTZ_ORE;
+    @ObjectHolder("aura_quartz_pillar")
+    public static Block AURA_QUARTZ_PILLAR;
     @ObjectHolder("crystal_capacitor")
     public static CrystalCapacitor CRYSTAL_CAPACITOR;
     @ObjectHolder("crystal_capacitor_mk2")
@@ -75,8 +75,8 @@ public class ModBlock {
 
         COLDIRON_BLOCK = simpleBlockFactory(event, "coldiron_block", Material.IRON, 4.0F, 3.0F, SoundType.METAL);
 
-        CHISELED_AZURE_QUARTZ = simpleBlockFactory(event, "chiseled_azure_quartz", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
-        AZURE_QUARTZ_BLOCK = simpleBlockFactory(event, "azure_quartz_block", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
+        CHISELED_AURA_QUARTZ = simpleBlockFactory(event, "chiseled_aura_quartz", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
+        AURA_QUARTZ_BLOCK = simpleBlockFactory(event, "aura_quartz_block", Material.ROCK, 0.8F, 0.8F, SoundType.METAL);
 
 
         // blocks with variations
@@ -86,10 +86,10 @@ public class ModBlock {
         ELDER_DOOR = doorFactory(event, ELDER_PLANKS, "elder_door");
         ELDER_TRAPDOOR = trapdoorFactory(event, ELDER_TRAPDOOR, "elder_trapdoor");
 
-        AZURE_QUARTZ_PILLAR = rotatedPillarBlockFactory(event, AbstractBlock.Properties.create(Material.ROCK, MaterialColor.SNOW).hardnessAndResistance(0.8F).sound(SoundType.STONE), "azure_quartz_pillar");
+        AURA_QUARTZ_PILLAR = rotatedPillarBlockFactory(event, AbstractBlock.Properties.create(Material.ROCK, MaterialColor.SNOW).hardnessAndResistance(0.8F).sound(SoundType.STONE), "aura_quartz_pillar");
 
         // non-simple block
-        registerBlock(new AzureQuartzOre(), "azure_quartz_ore", event);
+        registerBlock(new AuraQuartzOre(), "aura_quartz_ore", event);
 
         registerBlock(new ElderLogBlock(), "elder_log", event);
         registerBlock(new StrippedElderLogBlock(), "stripped_elder_log", event);

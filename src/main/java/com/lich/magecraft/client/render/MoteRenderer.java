@@ -10,7 +10,10 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.entity.monster.SlimeEntity;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.vector.Vector3f;
 
 public class MoteRenderer extends EntityRenderer<MoteEntity> {
 
@@ -29,6 +32,8 @@ public class MoteRenderer extends EntityRenderer<MoteEntity> {
         matrixStackIn.push();
         IVertexBuilder ivertexbuilder = bufferIn.getBuffer(model.getRenderType(getEntityTexture(entityIn)));
         int i = OverlayTexture.NO_OVERLAY;
+        float f = entityIn.getMoteSize();
+        matrixStackIn.scale(f, f, f);
         model.render(matrixStackIn, ivertexbuilder, packedLightIn, i,0,0,0,0);
         matrixStackIn.pop();
         super.render(entityIn, entityYaw, partialTicks, matrixStackIn, bufferIn, packedLightIn);

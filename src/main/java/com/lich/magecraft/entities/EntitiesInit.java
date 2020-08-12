@@ -34,7 +34,7 @@ public class EntitiesInit {
     public static void registerEntityWorldSpawn(EntityType<?> entity, EntityClassification classification, boolean overworldOnly) {
         for (Biome biome : ForgeRegistries.BIOMES) {
             if (!overworldOnly) {
-                biome.getSpawns(classification).add(new Biome.SpawnListEntry(entity, 10, 1,2));
+                biome.getSpawns(classification).add(new Biome.SpawnListEntry(entity, 2, 1,2));
             }
             else {
                 if ((biome.getCategory() != Biome.Category.NETHER) && (biome.getCategory() != Biome.Category.THEEND)) {

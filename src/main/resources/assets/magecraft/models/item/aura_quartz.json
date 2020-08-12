@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "magecraft:items/azure_quartz"
+    "layer0": "magecraft:items/aura_quartz"
   }
 }

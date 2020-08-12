@@ -31,8 +31,8 @@ public class ModItem {
     public static Item COLDIRON_INGOT;
     @ObjectHolder("coldiron_nugget")
     public static Item COLDIRON_NUGGET;
-    @ObjectHolder("azure_quartz")
-    public static Item AZURE_QUARTZ;
+    @ObjectHolder("aura_quartz")
+    public static Item AURA_QUARTZ;
 
     // mana
     @ObjectHolder("mana_crystal")
@@ -56,17 +56,17 @@ public class ModItem {
         // materials
         registerItem("coldiron_ingot", new Item(new Item.Properties().group(Magecraft.TAB)), event);
         registerItem("coldiron_nugget", new Item(new Item.Properties().group(Magecraft.TAB)), event);
-        registerItem("azure_quartz", new Item(new Item.Properties().group(Magecraft.TAB)), event);
+        registerItem("aura_quartz", new Item(new Item.Properties().group(Magecraft.TAB)), event);
 
         // mana stuff
         registerItem("mana_crystal", new ManaCrystal(new Item.Properties().group(Magecraft.TAB)), event);
         registerItem("mana_orb", new ManaOrb(new Item.Properties().group(Magecraft.TAB)), event);
 
         //block items
-        blockItemFactory (ModBlock.CHISELED_AZURE_QUARTZ, Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.AZURE_QUARTZ_BLOCK, Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.AZURE_QUARTZ_ORE, Constants.ITEM_PROPS, event);
-        blockItemFactory (ModBlock.AZURE_QUARTZ_PILLAR, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.CHISELED_AURA_QUARTZ, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.AURA_QUARTZ_BLOCK, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.AURA_QUARTZ_ORE, Constants.ITEM_PROPS, event);
+        blockItemFactory (ModBlock.AURA_QUARTZ_PILLAR, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.CRYSTAL_CAPACITOR, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.CRYSTAL_CAPACITOR_MK2, Constants.ITEM_PROPS, event);
         blockItemFactory (ModBlock.COLDIRON_BLOCK, Constants.ITEM_PROPS, event);

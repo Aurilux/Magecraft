@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "magecraft:azure_quartz_ore"
+              "name": "magecraft:aura_quartz_ore"
             },
             {
               "type": "minecraft:item",
@@ -46,7 +46,7 @@
                   }
                 }
               ],
-              "name": "magecraft:azure_quartz"
+              "name": "magecraft:aura_quartz"
             }
           ]
         }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "magecraft:blocks/chiseled_azure_quartz"
+    "all": "magecraft:blocks/aura_quartz_block"
   }
 }

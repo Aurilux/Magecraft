@@ -12,7 +12,4 @@ public class ElderBookshelfBlock extends Block {
                 .hardnessAndResistance(0.5F)
                 .sound(SoundType.WOOD));
     }
-
-
-
 }

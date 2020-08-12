@@ -24,7 +24,7 @@ public class ModOreBlock {
             // if biome is in the overworld
             if ((biome.getCategory() != Biome.Category.NETHER) && (biome.getCategory() != Biome.Category.THEEND)) {
                 // smokey quartz ore
-                genOre(biome, 5,8, 5, 20, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlock.AZURE_QUARTZ_ORE.getBlock().getDefaultState(), 8);
+                genOre(biome, 5,8, 5, 20, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlock.AURA_QUARTZ_ORE.getBlock().getDefaultState(), 8);
             }
         }
     }
