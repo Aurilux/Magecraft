@@ -1,6 +1,6 @@
 package com.lich.magecraft.client.model;
 
-import com.lich.magecraft.entities.mote.MoteEntity;
+import com.lich.magecraft.common.entities.mote.MoteEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.RenderType;

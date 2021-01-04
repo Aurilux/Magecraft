@@ -1,4 +1,4 @@
-package com.lich.magecraft.mana;
+package com.lich.magecraft.common.mana;
 
 import net.minecraft.nbt.INBT;
 import net.minecraft.util.Direction;

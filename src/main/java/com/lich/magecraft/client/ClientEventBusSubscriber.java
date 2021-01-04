@@ -1,7 +1,7 @@
-package com.lich.magecraft.util;
+package com.lich.magecraft.client;
 
-import com.lich.magecraft.Magecraft;
-import com.lich.magecraft.entities.EntitiesInit;
+import com.lich.magecraft.common.Magecraft;
+import com.lich.magecraft.common.entities.ModEntities;
 import com.lich.magecraft.client.render.MoteRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +14,6 @@ public class ClientEventBusSubscriber {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        RenderingRegistry.registerEntityRenderingHandler(EntitiesInit.MOTE.get(), MoteRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.MOTE.get(), MoteRenderer::new);
     }
 }

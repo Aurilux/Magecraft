@@ -1,8 +1,8 @@
 package com.lich.magecraft.client.render;
 
-import com.lich.magecraft.Magecraft;
+import com.lich.magecraft.common.Magecraft;
 import com.lich.magecraft.client.model.MoteModel;
-import com.lich.magecraft.entities.mote.MoteEntity;
+import com.lich.magecraft.common.entities.mote.MoteEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
@@ -10,10 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.entity.monster.SlimeEntity;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.vector.Vector3f;
 
 public class MoteRenderer extends EntityRenderer<MoteEntity> {
 

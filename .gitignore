@@ -1,5 +1,31 @@
-# file: ./.gitignore
-.gradle
-.idea
-build
-run
+# Git, Gradle, Forge, Intellij, etc #
+######################
+.git/
+.gradle/
+.idea/
+libs/
+build/
+run/
+logs/
+
+# Entirely Ignored Extensions and Directories #
+######################
+*.bat
+*.txt
+*.odt
+media/
+
+# Unique Files #
+######################
+private.properties
+
+# Various OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+/bin

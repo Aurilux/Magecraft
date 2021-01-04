@@ -1,4 +1,4 @@
-package com.lich.magecraft.mana;
+package com.lich.magecraft.common.mana;
 
 public interface IMana {
 

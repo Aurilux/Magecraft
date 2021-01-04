@@ -1,7 +1,7 @@
-package com.lich.magecraft.entities;
+package com.lich.magecraft.common.entities;
 
-import com.lich.magecraft.Magecraft;
-import com.lich.magecraft.entities.mote.MoteEntity;
+import com.lich.magecraft.common.Magecraft;
+import com.lich.magecraft.common.entities.mote.MoteEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;

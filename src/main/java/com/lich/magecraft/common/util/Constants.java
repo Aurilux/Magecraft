@@ -1,8 +1,7 @@
-package com.lich.magecraft.util;
+package com.lich.magecraft.common.util;
 
-import com.lich.magecraft.Magecraft;
+import com.lich.magecraft.common.Magecraft;
 import net.minecraft.item.Item;
-import net.minecraftforge.registries.ObjectHolder;
 
 //constants
 public class Constants {
