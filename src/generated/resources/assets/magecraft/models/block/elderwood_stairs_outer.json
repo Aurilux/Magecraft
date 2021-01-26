@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "side": "magecraft:block/elderwood_planks",
+    "bottom": "magecraft:block/elderwood_planks",
+    "top": "magecraft:block/elderwood_planks"
+  }
+}

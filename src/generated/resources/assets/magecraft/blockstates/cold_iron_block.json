@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "magecraft:block/cold_iron_block"
+    }
+  }
+}

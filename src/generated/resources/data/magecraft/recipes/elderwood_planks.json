@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magecraft:elderwood_log"
+    }
+  ],
+  "result": {
+    "item": "magecraft:elderwood_planks",
+    "count": 4
+  }
+}

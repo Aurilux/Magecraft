@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "magecraft:elderwood_planks"
+    }
+  },
+  "result": {
+    "item": "magecraft:elderwood_door",
+    "count": 3
+  }
+}

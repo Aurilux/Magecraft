@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "magecraft:elderwood_planks"
+    }
+  },
+  "result": {
+    "item": "magecraft:elderwood_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "magecraft:block/elderwood_stripped",
+    "end": "magecraft:block/elderwood_stripped_top"
+  }
+}

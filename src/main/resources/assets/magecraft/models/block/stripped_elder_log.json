@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "magecraft:blocks/stripped_elder_log_top",
-    "side": "magecraft:blocks/stripped_elder_log"
-  }
-}

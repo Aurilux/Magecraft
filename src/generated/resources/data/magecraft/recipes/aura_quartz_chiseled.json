@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "A A",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "magecraft:aura_quartz_block"
+    }
+  },
+  "result": {
+    "item": "magecraft:aura_quartz_chiseled",
+    "count": 4
+  }
+}

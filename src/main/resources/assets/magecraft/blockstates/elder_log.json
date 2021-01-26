@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "axis=y":    { "model": "magecraft:block/elder_log" },
-    "axis=z":     { "model": "magecraft:block/elder_log", "x": 90 },
-    "axis=x":     { "model": "magecraft:block/elder_log", "x": 90, "y": 90 }
-  }
-}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "magecraft:block/elderwood_slab_top"
+    },
+    "type=bottom": {
+      "model": "magecraft:block/elderwood_slab"
+    },
+    "type=double": {
+      "model": "magecraft:block/elderwood_planks"
+    }
+  }
+}

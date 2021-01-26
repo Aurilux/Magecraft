@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magecraft:aura_quartz_block"
+    }
+  ],
+  "result": {
+    "item": "magecraft:aura_quartz_shard",
+    "count": 9
+  }
+}

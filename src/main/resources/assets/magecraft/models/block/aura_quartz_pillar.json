@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "magecraft:blocks/aura_quartz_pillar_top",
-    "side": "magecraft:blocks/aura_quartz_pillar"
-  }
-}

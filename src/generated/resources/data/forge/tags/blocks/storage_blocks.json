@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/aura_quartz",
+    "#forge:storage_blocks/cold_iron"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "magecraft:cold_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "magecraft:cold_iron_block"
+  }
+}
